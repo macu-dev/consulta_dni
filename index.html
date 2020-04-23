@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultas DNI</title>
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="js/sweetalert2/dist/sweetalert2.min.css">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>CONSULTAS DNI</h1>
+    </div>
+  
+  <main>
+    <div class="container-left">
+      <form>
+        <input type="text" placeholder="Ingrese su numero de DNI" id="buscador" required pattern="[0-9]{8}" max="999999999" min="1" maxlength="8" minlength="8"/>
+        <div class="btn-box">
+          <input type="submit" value="Buscar"/>
+        </div>
+      </form>
+    </div>
+  
+    <div class="container-right">
+      <div class="box-img">
+        <img src="IMG/trabajando.svg" alt="Trabajando">
+      </div>
+    </div>
+  </main>
+  </div>
+
+  <div class="mask hide">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/API.js"></script>
+  <script src="js/sweetalert2/dist/sweetalert2.min.js"></script>
+</body>
+</html>
